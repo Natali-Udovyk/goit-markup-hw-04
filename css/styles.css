@@ -1,0 +1,328 @@
+:root {
+    --main-background-color: #fff;
+    --primary-text-color: #212121;
+    --accent-color: #2196F3;
+}
+
+/*Index.html*/
+body {
+    background-color: var(--main-background-color);
+    color: var(--primary-text-color);
+    font-family: roboto, sans-serif;
+    text-decoration: none;
+}
+
+.logo {
+    font-family: raleway;
+    font-size: 26px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 1);
+    line-height: 2;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+
+}
+
+.logo-header {
+    color: #2196F3;
+    font-family: raleway;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 2;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+
+}
+
+.nav-list .link {
+    color: var(--primary-text-color);
+    font-weight: 500;
+    line-height: 1.14;
+    font-size: 14px;
+    text-decoration: none;
+
+}
+
+.nav-list .link:hover,
+.nav-list .link:focus {
+    color: var(--accent-color)
+}
+
+.contact-mail,
+.contact-number {
+    letter-spacing: 0.03em;
+    line-height: 1.7;
+    font-size: 14px;
+    text-decoration: none;
+    color: #757575;
+}
+
+.contact-number:hover,
+.contact-number:focus {
+    color: var(--accent-color);
+}
+
+.contact-mail:hover,
+.contact-mail:focus {
+    color: var(--accent-color);
+}
+
+/* Main */
+.main {
+    background-color: #2F303A;
+}
+
+.title {
+    background-color: #2F303A;
+    color: #FFFFFF;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.order-button {
+    background-color: var(--accent-color);
+    color: #fff;
+    letter-spacing: 0.06em;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    font-family: roboto;
+}
+
+.subtitle {
+    color: #212121;
+    line-height: 1.14;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+}
+
+.slogan {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+.list-items {
+    background-color: #F5F4FA;
+}
+
+.headline {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+
+.caption {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+
+.text {
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+.list {
+    list-style: none;
+}
+
+/* Portfolio */
+
+.logo {
+    font-family: raleway;
+    font-size: 26px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 1);
+    line-height: 2;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+
+}
+
+.logo-header {
+    color: #2196F3;
+    font-family: raleway;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 2;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+
+}
+
+.nav-list .link {
+    color: var(--primary-text-color);
+    font-weight: 500;
+    line-height: 1.14;
+    font-size: 14px;
+    text-decoration: none;
+
+}
+
+.nav-list .link:hover,
+.nav-list .link:focus {
+    color: var(--accent-color)
+}
+
+.contact-mail,
+.contact-number {
+    letter-spacing: 0.03em;
+    line-height: 1.7;
+    font-size: 14px;
+    text-decoration: none;
+    color: #757575;
+}
+
+.contact-number:hover,
+.contact-number:focus {
+    color: var(--accent-color);
+}
+
+.contact-mail:hover,
+.contact-mail:focus {
+    color: var(--accent-color);
+}
+
+.button.all,
+.button.web,
+.button.applications,
+.button.design,
+.button.marketing {
+    background: #F5F4FA;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    font-family: roboto;
+}
+
+.button.all:hover,
+.button.all:focus {
+    color: var(--main-background-color);
+    background-color: var(--accent-color);
+}
+
+.button.web:hover,
+.button.web:focus {
+    color: var(--main-background-color);
+    background-color: var(--accent-color);
+}
+
+.button.applications:hover,
+.button.applications:focus {
+    color: var(--main-background-color);
+    background-color: var(--accent-color);
+}
+
+.button.design:hover,
+.button.design:focus {
+    color: var(--main-background-color);
+    background-color: var(--accent-color);
+}
+
+.button.marketing:hover,
+.button.marketing:focus {
+    color: var(--main-background-color);
+    background-color: var(--accent-color);
+}
+
+.nav-list .link.current {
+    color: var(--accent-color);
+}
+
+.features-list {
+    background-color: var(--main-background-color);
+}
+
+
+.title-slider {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.text-slider {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #757575;
+    letter-spacing: 0.03em;
+}
+
+.footer-content {
+    background-color: #2F303A;
+    color: #fff;
+}
+
+.title-logo {
+    color: #2196F3;
+    font-family: raleway;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+
+.footer-logo {
+    font-family: raleway;
+    font-size: 26px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 1);
+    line-height: 2;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+
+.adress-link {
+    color: #fff;
+    letter-spacing: 0.03em;
+    line-height: 1.7;
+    font-size: 14px;
+    text-decoration: none;
+    font-style: normal;
+}
+
+.adress-link:hover,
+.adress-link:focus {
+    color: var(--accent-color);
+}
+
+.number,
+.mail {
+    letter-spacing: 0.03em;
+    line-height: 1.7;
+    font-size: 14px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+}
+
+.mail:hover,
+.mail:focus {
+    color: var(--accent-color);
+}
+
+.number:hover,
+.number:focus {
+    color: var(--accent-color);
+}
+
+.list {
+    list-style: none;
+}
