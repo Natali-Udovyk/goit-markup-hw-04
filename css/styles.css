@@ -5,11 +5,41 @@
 }
 
 /*Index.html*/
+
 body {
     background-color: var(--main-background-color);
     color: var(--primary-text-color);
     font-family: roboto, sans-serif;
     text-decoration: none;
+    margin: 0px;
+}
+
+/* Утіліті */
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.container {
+    width: 1230px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+
+}
+
+.main-nav {
+    display: flex;
+
+}
+
+
+
+.section {
+    padding: 94px 94px;
 }
 
 .logo {
@@ -20,6 +50,7 @@ body {
     line-height: 2;
     letter-spacing: 0.03em;
     text-decoration: none;
+    background-color: aquamarine;
 
 }
 
@@ -34,7 +65,16 @@ body {
 
 }
 
+.nav-list {
+    display: flex;
+}
+
+.nav-list .item:not(:last-child) {
+    margin-right: 50px;
+}
+
 .nav-list .link {
+
     color: var(--primary-text-color);
     font-weight: 500;
     line-height: 1.14;
@@ -57,6 +97,11 @@ body {
     color: #757575;
 }
 
+.contact-mail,
+.contact-number:not(:last-child) {
+    margin-right: 50px;
+}
+
 .contact-number:hover,
 .contact-number:focus {
     color: var(--accent-color);
@@ -70,6 +115,7 @@ body {
 /* Main */
 .main {
     background-color: #2F303A;
+    text-align: center;
 }
 
 .title {
@@ -81,6 +127,8 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .order-button {
@@ -91,6 +139,13 @@ body {
     font-size: 16px;
     line-height: 30px;
     font-family: roboto;
+    border-radius: 4px;
+    min-width: 216px;
+    height: 50px;
+    padding: 10px 32px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    margin-top: 30px;
 }
 
 .subtitle {
@@ -99,6 +154,8 @@ body {
     font-weight: 700;
     font-size: 14px;
     letter-spacing: 0.03em;
+    margin: 0;
+    padding: 0;
 }
 
 .slogan {
@@ -106,6 +163,8 @@ body {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: #757575;
+    padding: 0;
+    margin: 0;
 }
 
 .list-items {
@@ -118,6 +177,9 @@ body {
     line-height: 1.2;
     letter-spacing: 0.03em;
     color: #212121;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
 .caption {
@@ -126,6 +188,8 @@ body {
     line-height: 1.2;
     letter-spacing: 0.03em;
     color: #212121;
+    margin: 0;
+    padding: 0;
 }
 
 .text {
@@ -133,10 +197,8 @@ body {
     line-height: 1.2;
     letter-spacing: 0.03em;
     color: #757575;
-}
-
-.list {
-    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 /* Portfolio */
@@ -209,6 +271,8 @@ body {
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
     font-family: roboto;
+    border: 1px solid transparent;
+    border-radius: 4px;
 }
 
 .button.all:hover,
@@ -255,6 +319,8 @@ body {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    margin: 0;
+    padding: 0;
 }
 
 .text-slider {
@@ -262,6 +328,8 @@ body {
     line-height: 1.8;
     color: #757575;
     letter-spacing: 0.03em;
+    margin: 0;
+    padding: 0;
 }
 
 .footer-content {
@@ -323,6 +391,6 @@ body {
     color: var(--accent-color);
 }
 
-.list {
-    list-style: none;
+img {
+    display: block;
 }
