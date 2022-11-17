@@ -1,7 +1,15 @@
 :root {
     --main-background-color: #fff;
     --primary-text-color: #212121;
-    --accent-color: #2196f3;
+    --logo-text-color: #000;
+    --accent-color: #188CE8;
+    --contacts-text-color: #757575;
+    --backgraund-banner-color: #2f303a;
+    --title-text-color: #fff;
+    --button-order-color: #2196F3;
+    --text-footer-color: #fff;
+    --button-text-color: #fff;
+    --logo-color: #2196F3;
 }
 
 /*Index.html*/
@@ -9,15 +17,13 @@
 body {
     background-color: var(--main-background-color);
     color: var(--primary-text-color);
-    font-family: roboto, sans-serif;
-    text-decoration: none;
-    margin: 0px;
+    font-family: Roboto, sans-serif;
 }
 
 /* Утіліті */
-h2,
-h2,
-h1 {
+p,
+h1,
+h2 {
     margin: 0;
     padding: 0;
 }
@@ -49,7 +55,9 @@ h1 {
     padding: 0 auto;
 }
 
-
+.contacts-item:not(:last-child) {
+    margin-right: 50px;
+}
 
 .section {
     padding: 94px 94px;
@@ -60,22 +68,22 @@ h1 {
     font-family: raleway;
     font-size: 26px;
     font-weight: 700;
-    color: rgba(0, 0, 0, 1);
-    line-height: 2;
+    color: var(--logo-text-color);
+    line-height: calc(31/26);
     letter-spacing: 0.03em;
     text-decoration: none;
 
+    display: flex;
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
 
 .logo-header {
-    color: #2196f3;
-    font-family: raleway;
-    font-size: 26px;
-    font-weight: 700;
-    line-height: 2;
-    letter-spacing: 0.03em;
-    text-decoration: none;
+    color: var(--logo-color);
+
+    display: flex;
 }
+
 
 .nav-list {
     display: flex;
@@ -94,10 +102,13 @@ h1 {
     font-size: 14px;
     text-decoration: none;
 
+    padding-top: 32px;
+    padding-bottom: 32px;
+
 }
 
-.nav-list .link:hover,
-.nav-list .link:focus {
+.nav-link:hover,
+.nav-link:focus {
     color: var(--accent-color);
 }
 
@@ -107,7 +118,10 @@ h1 {
     line-height: 1.7;
     font-size: 14px;
     text-decoration: none;
-    color: #757575;
+    color: var(--contacts-text-color);
+
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .contact-mail,
@@ -127,16 +141,15 @@ h1 {
 }
 
 /* Main */
-.main {
-    background-color: #2f303a;
+.banner {
+    background-color: var(--backgraund-banner-color);
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
 }
 
 .title {
-    background-color: #2f303a;
-    color: #ffffff;
+    color: var(--title-text-color);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.4;
@@ -145,7 +158,7 @@ h1 {
 
 
     margin-top: 0;
-    width: 700px;
+    width: 696px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
@@ -156,22 +169,42 @@ h1 {
 
 
     background-color: var(--accent-color);
-    color: #fff;
+    color: var(--button-text-color);
     letter-spacing: 0.06em;
     font-weight: 700;
     font-size: 16px;
     line-height: 30px;
-    font-family: roboto;
+    font-family: Roboto;
     border-radius: 4px;
-    width: 200px;
-    height: 50px;
-    padding: 0;
+    border: none;
+    padding: 10px 32px;
     cursor: pointer;
 
 }
 
+.order-button:hover,
+.order-button:focus {
+    background: var(--accent-color);
+}
+
+/* ------Section features------ */
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .subtitle {
-    color: #212121;
+    color: var(--primary-text-color);
     line-height: 1.14;
     font-weight: 700;
     font-size: 14px;
@@ -186,7 +219,7 @@ h1 {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--contacts-text-color);
     padding: 0;
     margin: 0;
 }
@@ -197,6 +230,7 @@ h1 {
 
 .section-skills {
     padding-bottom: 94px;
+    padding-top: 0;
 }
 
 .list-skills {
@@ -211,15 +245,18 @@ h1 {
 
 .features-list {
     display: flex;
+    padding: 0;
+    margin: 0;
     background-color: var(--main-background-color);
 }
 
+/* ----Our team------ */
 .headline {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.2;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--primary-text-color);
 
     margin: 0;
     padding: 0;
@@ -228,12 +265,18 @@ h1 {
 
 }
 
+.team-box {
+    background: var(--main-background-color);
+    display: block;
+    padding: 30px;
+}
+
 .caption {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--primary-text-color);
 
     margin: 0;
     padding: 0;
@@ -245,7 +288,7 @@ h1 {
     font-size: 16px;
     line-height: 1.2;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--contacts-text-color);
 
     text-align: center;
     margin: 0;
@@ -263,7 +306,7 @@ h1 {
 }
 
 img {
-    padding-bottom: 30px;
+    display: block;
 }
 
 .footer-contacts {
@@ -278,14 +321,14 @@ img {
 /* Portfolio */
 
 .border-header {
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-bottom-color: rgba(236, 236, 236, 1);
+    border-bottom: 1px solid #ECECEC;
 }
 
 .card-section {
     padding: 94px 0;
 }
+
+
 
 .filter {
     display: flex;
@@ -293,10 +336,16 @@ img {
     margin: 0;
     padding: 0;
     margin-bottom: 50px;
+
 }
 
 .filter li:not(:last-child) {
     margin-right: 8px;
+}
+
+.portfolio-box {
+    padding: 20px 24px;
+    border: 1px solid #ECECEC;
 }
 
 .portfolio-list {
@@ -310,7 +359,6 @@ img {
     padding: 0;
     margin-right: 30px;
     margin-bottom: 30px;
-    border: 1px solid #ECECEC;
 }
 
 .portfolio-item:nth-child(3n) {
@@ -321,25 +369,6 @@ img {
     margin-bottom: 0;
 }
 
-.logo {
-    font-family: raleway;
-    font-size: 26px;
-    font-weight: 700;
-    color: rgba(0, 0, 0, 1);
-    line-height: 2;
-    letter-spacing: 0.03em;
-    text-decoration: none;
-}
-
-.logo-header {
-    color: #2196f3;
-    font-family: raleway;
-    font-size: 26px;
-    font-weight: 700;
-    line-height: 2;
-    letter-spacing: 0.03em;
-    text-decoration: none;
-}
 
 .nav-list .link {
     color: var(--primary-text-color);
@@ -360,7 +389,7 @@ img {
     line-height: 1.7;
     font-size: 14px;
     text-decoration: none;
-    color: #757575;
+    color: var(--contacts-text-color);
 }
 
 .contact-number:hover,
@@ -385,9 +414,13 @@ img {
     line-height: 1.62;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
-    font-family: roboto;
+    font-family: Roboto;
     border: 1px solid transparent;
     border-radius: 4px;
+
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 6px 22px;
 }
 
 .button.all:hover,
@@ -442,34 +475,30 @@ img {
 
     margin: 0;
     padding: 0;
-    margin-left: 24px;
     margin-bottom: 4px;
-    margin-top: 20px;
 }
 
 .text-slider {
     font-size: 16px;
     line-height: 1.8;
-    color: #757575;
+    color: var(--contacts-text-color);
     letter-spacing: 0.03em;
 
     margin: 0;
     padding: 0;
-    margin-left: 24px;
-    margin-bottom: 20px;
 }
 
 .footer-content {
-    background-color: #2f303a;
-    color: #fff;
+    background-color: var(--backgraund-banner-color);
+    padding: 60px 0;
 }
 
 .title-logo {
-    color: #2196f3;
+    color: var(--logo-color);
     font-family: raleway;
     font-size: 26px;
     font-weight: 700;
-    line-height: 1.19;
+    line-height: calc(31/26);
     letter-spacing: 0.03em;
     text-decoration: none;
 }
@@ -478,16 +507,17 @@ img {
     font-family: raleway;
     font-size: 26px;
     font-weight: 700;
-    color: rgba(255, 255, 255, 1);
-    line-height: 2;
+    color: var(--text-footer-color);
+    line-height: calc(31/26);
     letter-spacing: 0.03em;
     text-decoration: none;
 
+    display: block;
     margin-bottom: 20px;
 }
 
 .adress-link {
-    color: #fff;
+    color: var(--text-footer-color);
     letter-spacing: 0.03em;
     line-height: 1.7;
     font-size: 14px;
@@ -506,7 +536,7 @@ img {
     line-height: 1.7;
     font-size: 14px;
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--contacts-text-color);
     font-style: normal;
 }
 
