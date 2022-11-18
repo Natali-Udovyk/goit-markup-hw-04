@@ -267,6 +267,7 @@ h2 {
 }
 
 .team-box {
+    background: var(--main-background-color);
     display: block;
     padding: 30px;
 }
