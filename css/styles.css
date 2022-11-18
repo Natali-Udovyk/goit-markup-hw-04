@@ -10,6 +10,7 @@
     --text-footer-color: #fff;
     --button-text-color: #fff;
     --logo-color: #2196F3;
+    --color-list-items: #f5f4fa;
 }
 
 /*Index.html*/
@@ -23,13 +24,23 @@ body {
 /* Утіліті */
 p,
 h1,
-h2 {
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0;
-    padding: 0;
+
+}
+
+img {
+    display: block;
 }
 
 .list {
     list-style: none;
+    margin: 0;
+    padding: 0;
 
 }
 
@@ -55,12 +66,9 @@ h2 {
     padding: 0 auto;
 }
 
-.contacts-item:not(:last-child) {
-    margin-right: 50px;
-}
 
 .section {
-    padding: 94px 94px;
+    padding: 94px 0;
 }
 
 .logo {
@@ -157,7 +165,7 @@ h2 {
     text-transform: uppercase;
 
 
-    margin-top: 0;
+
     width: 696px;
     margin-left: auto;
     margin-right: auto;
@@ -168,7 +176,7 @@ h2 {
 .order-button {
 
 
-    background-color: var(--accent-color);
+    background-color: var(--button-order-color);
     color: var(--button-text-color);
     letter-spacing: 0.06em;
     font-weight: 700;
@@ -184,7 +192,7 @@ h2 {
 
 .order-button:hover,
 .order-button:focus {
-    background: var(--accent-color);
+    background-color: var(--accent-color);
 }
 
 /* ------Section features------ */
@@ -206,7 +214,6 @@ h2 {
 .subtitle {
     color: var(--primary-text-color);
     line-height: 1.14;
-    font-weight: 700;
     font-size: 14px;
     letter-spacing: 0.03em;
     margin: 0;
@@ -225,7 +232,7 @@ h2 {
 }
 
 .list-items {
-    background-color: #f5f4fa;
+    background-color: var(--color-list-items);
 }
 
 .section-skills {
@@ -253,7 +260,7 @@ h2 {
 
 /* ----Our team------ */
 .headline {
-    font-weight: 700;
+
     font-size: 36px;
     line-height: 1.2;
     letter-spacing: 0.03em;
@@ -267,7 +274,6 @@ h2 {
 }
 
 .team-box {
-    background: var(--main-background-color);
     display: block;
     padding: 30px;
 }
@@ -286,7 +292,6 @@ h2 {
 }
 
 .text {
-    font-size: 16px;
     line-height: 1.2;
     letter-spacing: 0.03em;
     color: var(--contacts-text-color);
@@ -314,16 +319,13 @@ h2 {
     border-radius: 0px 0px 4px 4px;
 }
 
-img {
-    display: block;
-}
 
 .footer-contacts {
     padding: 0;
     margin: 0;
 }
 
-.footer-contacts li:not(:last-child) {
+.footer-item:not(:last-child) {
     margin-bottom: 9px;
 }
 
@@ -333,22 +335,17 @@ img {
     border-bottom: 1px solid #ECECEC;
 }
 
-.card-section {
-    padding: 94px 0;
-}
-
 
 
 .filter {
     display: flex;
     justify-content: center;
-    margin: 0;
-    padding: 0;
+
     margin-bottom: 50px;
 
 }
 
-.filter li:not(:last-child) {
+.filter-button:not(:last-child) {
     margin-right: 8px;
 }
 
@@ -362,6 +359,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     padding: 0;
+
 }
 
 .portfolio-item {
@@ -489,13 +487,12 @@ img {
 }
 
 .text-slider {
-    font-size: 16px;
+
     line-height: 1.8;
     color: var(--contacts-text-color);
     letter-spacing: 0.03em;
 
-    margin: 0;
-    padding: 0;
+
 }
 
 .footer-content {
