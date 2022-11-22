@@ -154,6 +154,8 @@ img {
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
+
+
 }
 
 .title {
@@ -259,7 +261,8 @@ img {
 }
 
 /* ----Our team------ */
-.headline {
+.headline,
+.title-company {
 
     font-size: 36px;
     line-height: 1.2;
@@ -275,7 +278,7 @@ img {
 
 .team-box {
     display: block;
-    padding: 30px;
+    padding: 30px 30px 0 30px;
 }
 
 .caption {
@@ -323,6 +326,7 @@ img {
 .footer-contacts {
     padding: 0;
     margin: 0;
+
 }
 
 .footer-item:not(:last-child) {
@@ -334,8 +338,6 @@ img {
 .border-header {
     border-bottom: 1px solid #ECECEC;
 }
-
-
 
 .filter {
     display: flex;
@@ -349,10 +351,18 @@ img {
     margin-right: 8px;
 }
 
-.portfolio-box {
+.portfolio-box,
+.link-portfolio {
     padding: 20px 24px;
     border: 1px solid #ECECEC;
     border-top: none;
+
+
+}
+
+.link-portfolio:hover {
+    border: 1px solid #EEEEEE;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-list {
@@ -435,30 +445,40 @@ img {
 .button.all:focus {
     color: var(--main-background-color);
     background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
 }
 
 .button.web:hover,
 .button.web:focus {
     color: var(--main-background-color);
     background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
 }
 
 .button.applications:hover,
 .button.applications:focus {
     color: var(--main-background-color);
     background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
 }
 
 .button.design:hover,
 .button.design:focus {
     color: var(--main-background-color);
     background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
 }
 
 .button.marketing:hover,
 .button.marketing:focus {
     color: var(--main-background-color);
     background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
 }
 
 .nav-link.current {
@@ -498,6 +518,7 @@ img {
 .footer-content {
     background-color: var(--backgraund-banner-color);
     padding: 60px 0;
+
 }
 
 .title-logo {
@@ -557,6 +578,212 @@ img {
     color: var(--accent-color);
 }
 
-/* img {
-    display: block;
-} */
+/* ------Decoration------ */
+.main-banner {
+    min-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url("../images/mainphotoheader.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* -----mail-phone-icon----- */
+.contact-mail,
+.contact-number {
+    display: flex;
+    align-items: center;
+}
+
+.link-icon-mail,
+.link-icon-phone {
+    fill: var(--contacts-text-color);
+    display: inline-flex;
+    padding: 34px 10px 34px auto;
+
+
+    margin-right: 10px;
+}
+
+.link-icon-mail:hover,
+.link-icon-phone:hover {
+    fill: var(--accent-color);
+}
+
+/* ------Benefits------ */
+
+.benefits {
+    display: inline-flex;
+}
+
+.benefits-list {
+    width: 270px;
+    height: 120px;
+    background-color: var(--color-list-items);
+    /* padding: 25px 100px; */
+    margin-bottom: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.benefits-list:not(:last-child) {
+    margin-right: 30px;
+}
+
+.benefits-icon {
+
+    align-items: center;
+}
+
+/* ----Team links------ */
+
+.social-links {
+    margin: 16px 32px 30px;
+    background-color: var(--main-background-color);
+    display: inline-flex;
+    align-items: center;
+
+}
+
+
+.insta-link {
+    background-color: var(--text-footer-color);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: #AFB1B8;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.insta-link:not(:last-child) {
+    margin-right: 10px;
+}
+
+.insta-link:hover {
+    background-color: var(--accent-color);
+
+}
+
+.link-icon {
+    fill: #afb1b8;
+
+}
+
+.link-icon:hover {
+    fill: var(--main-background-color);
+
+}
+
+
+/* -------Cpmpany------- */
+
+.company-list {
+    list-style: none;
+    background-color: var(--main-background-color);
+
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+}
+
+.logo-company {
+    display: inline-flex;
+
+    background-color: var(--main-background-color);
+}
+
+.logo-link {
+    width: 170px;
+    height: 92px;
+    border: Solid #AFB1B8;
+    border-radius: 4px;
+    background-color: var(--main-background-color);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.logo-company:not(:last-child) {
+    margin-right: 30px;
+}
+
+.logo-link:hover {
+    border: Solid var(--accent-color);
+}
+
+.logo-icon {
+    fill: #afb1b8;
+}
+
+.logo-icon:hover {
+    fill: var(--accent-color)
+}
+
+/* ----footer-decoration--- */
+.footer-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(26/14);
+    letter-spacing: 0.03em;
+    color: var(--text-footer-color);
+    margin-left: 93px;
+    margin-bottom: 20px;
+}
+
+.footer-adress {
+    display: flex;
+    align-items: baseline;
+}
+
+.social-links-footer {
+    margin-left: 93px;
+    background-color: var(--backgraund-banner-color);
+    display: inline-flex;
+    align-items: center;
+
+}
+
+
+.insta-link-footer {
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: #AFB1B8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.insta-link-footer:not(:last-child) {
+    margin-right: 10px;
+}
+
+.insta-link-footer:hover {
+    background-color: var(--accent-color);
+
+}
+
+.link-icon-footer {
+    fill: var(--main-background-color);
+
+}
+
+.link-iconfooter:hover {
+    fill: var(--main-background-color);
+
+}
