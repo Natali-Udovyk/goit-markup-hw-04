@@ -11,8 +11,6 @@
     --button-text-color: #fff;
     --logo-color: #2196F3;
     --color-list-items: #f5f4fa;
-    --color-fill-icon: var(--color-fill-icon);
-    ;
 }
 
 /*Index.html*/
@@ -658,7 +656,7 @@ img {
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    color: var(--color-fill-icon);
+    color: #AFB1B8;
 
     display: flex;
     align-items: center;
@@ -676,8 +674,7 @@ img {
 }
 
 .link-icon {
-    fill: var(--color-fill-icon);
-    ;
+    fill: #afb1b8;
 
 }
 
@@ -707,8 +704,7 @@ img {
 .logo-link {
     width: 170px;
     height: 92px;
-    border: Solidvar(--color-fill-icon);
-    ;
+    border: Solid #AFB1B8;
     border-radius: 4px;
     background-color: var(--main-background-color);
 
@@ -727,8 +723,7 @@ img {
 }
 
 .logo-icon {
-    fill: var(--color-fill-icon);
-    ;
+    fill: #afb1b8;
 }
 
 .logo-icon:hover {
@@ -766,8 +761,7 @@ img {
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    color: var(--color-fill-icon);
-    ;
+    color: #AFB1B8;
     display: flex;
     align-items: center;
     justify-content: center;
