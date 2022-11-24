@@ -138,17 +138,21 @@ img {
 }
 
 
-.contact-number:hover,
-.contact-number:focus {
-    color: var(--accent-color);
+.contact-number:hover .link-icon-phone,
+.contact-number:focus .link-icon-phone {
+    fill: var(--accent-color);
 }
 
-.contact-mail:hover,
-.contact-mail:focus {
-    color: var(--accent-color);
+
+
+.contact-mail:hover .link-icon-mail,
+.contact-mail:focus .link-icon-mail {
+    fill: var(--accent-color);
 }
 
-/* Main */
+
+/*------- Main---------- */
+
 .banner {
     background-color: var(--backgraund-banner-color);
     text-align: center;
@@ -261,6 +265,7 @@ img {
 }
 
 /* ----Our team------ */
+
 .headline,
 .title-company {
 
@@ -278,7 +283,7 @@ img {
 
 .team-box {
     display: block;
-    padding: 30px 30px 0 30px;
+    padding: 30px 30px 30px 30px;
 }
 
 .caption {
@@ -300,7 +305,7 @@ img {
     color: var(--contacts-text-color);
 
     text-align: center;
-    margin: 0;
+    margin-bottom: 16px;
     padding: 0;
 }
 
@@ -359,8 +364,11 @@ img {
 
 }
 
+.link-portfolio {}
+
+.portfolio-item:hover,
 .portfolio-item:hover {
-    border: 1px solid #EEEEEE;
+
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -369,6 +377,7 @@ img {
     flex-wrap: wrap;
     padding: 0;
 
+
 }
 
 .portfolio-item {
@@ -376,6 +385,7 @@ img {
     padding: 0;
     margin-right: 30px;
     margin-bottom: 30px;
+    justify-content: center;
 }
 
 .portfolio-item:nth-child(3n) {
@@ -416,8 +426,10 @@ img {
 
 .contact-mail:hover,
 .contact-mail:focus {
+
     color: var(--accent-color);
 }
+
 
 .button.all,
 .button.web,
@@ -486,13 +498,6 @@ img {
 
 
 
-.item-features {
-    width: 270px;
-}
-
-.item-features:not(:last-child) {
-    margin-right: 30px;
-}
 
 .title-slider {
     font-weight: 700;
@@ -579,7 +584,8 @@ img {
 
 /* ------Decoration------ */
 .main-banner {
-    min-width: 1600px;
+
+    max-width: 1600px;
     height: 600px;
     margin-left: auto;
     margin-right: auto;
@@ -600,22 +606,18 @@ img {
 .link-icon-mail,
 .link-icon-phone {
     fill: var(--contacts-text-color);
-    display: inline-flex;
+    display: flex;
     padding: 34px 10px 34px auto;
 
 
     margin-right: 10px;
 }
 
-.link-icon-mail:hover,
-.link-icon-phone:hover {
-    fill: var(--accent-color);
-}
 
 /* ------Benefits------ */
 
 .benefits {
-    display: inline-flex;
+    display: flex;
 }
 
 .benefits-list {
@@ -643,11 +645,10 @@ img {
 /* ----Team links------ */
 
 .social-links {
-    margin: 16px 32px 30px;
     background-color: var(--main-background-color);
-    display: inline-flex;
+    display: flex;
     align-items: center;
-
+    justify-content: center;
 }
 
 
@@ -668,9 +669,10 @@ img {
     margin-right: 10px;
 }
 
-.insta-link:hover {
+.insta-link:hover,
+.insta-link:focus {
     background-color: var(--accent-color);
-
+    color: var(--color-list-items);
 }
 
 .link-icon {
@@ -678,11 +680,11 @@ img {
 
 }
 
-.link-icon:hover {
+
+.insta-link:hover .link-icon,
+.insta-link:focus .link-icon {
     fill: var(--main-background-color);
-
 }
-
 
 /* -------Cpmpany------- */
 
@@ -704,7 +706,7 @@ img {
 .logo-link {
     width: 170px;
     height: 92px;
-    border: Solid #AFB1B8;
+    border: 1px Solid #AFB1B8;
     border-radius: 4px;
     background-color: var(--main-background-color);
 
@@ -718,7 +720,8 @@ img {
     margin-right: 30px;
 }
 
-.logo-link:hover {
+.logo-link:hover,
+.logo-link:focus {
     border: Solid var(--accent-color);
 }
 
@@ -726,11 +729,14 @@ img {
     fill: #afb1b8;
 }
 
-.logo-icon:hover {
+
+.logo-link:hover .logo-icon,
+.logo-link:focus .logo-icon {
     fill: var(--accent-color)
 }
 
 /* ----footer-decoration--- */
+
 .footer-title {
     font-style: normal;
     font-weight: 700;
@@ -738,8 +744,13 @@ img {
     line-height: calc(26/14);
     letter-spacing: 0.03em;
     color: var(--text-footer-color);
-    margin-left: 93px;
     margin-bottom: 20px;
+
+}
+
+.footer-social {
+    margin-left: 93px;
+
 }
 
 .footer-adress {
@@ -748,7 +759,6 @@ img {
 }
 
 .social-links-footer {
-    margin-left: 93px;
     background-color: var(--backgraund-banner-color);
     display: inline-flex;
     align-items: center;
@@ -772,7 +782,8 @@ img {
     margin-right: 10px;
 }
 
-.insta-link-footer:hover {
+.insta-link-footer:hover,
+.insta-link-footer:focus {
     background-color: var(--accent-color);
 
 }
@@ -782,7 +793,8 @@ img {
 
 }
 
-.link-iconfooter:hover {
+.link-icon-footer:hover,
+.link-icon-footer:focus {
     fill: var(--main-background-color);
 
 }
