@@ -11,7 +11,7 @@
     --button-text-color: #fff;
     --logo-color: #2196F3;
     --color-list-items: #f5f4fa;
-    --transition-time-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-func: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*---------Index.html------*/
@@ -42,7 +42,7 @@ img {
     list-style: none;
     margin: 0;
     padding: 0;
-    outline: none;
+
 }
 
 .container {
@@ -85,6 +85,7 @@ img {
     display: flex;
     padding-top: 24px;
     padding-bottom: 25px;
+    outline: none;
 }
 
 .logo-header {
@@ -103,6 +104,7 @@ img {
 .nav-list .nav-item:not(:last-child) {
     margin-right: 50px;
 }
+
 
 .nav-link {
     color: var(--primary-text-color);
@@ -123,6 +125,8 @@ img {
 .nav-link:hover,
 .nav-link:focus {
     color: var(--accent-color);
+    transition: var(--transition-func);
+    outline: none;
 }
 
 .contact-mail,
@@ -146,6 +150,8 @@ img {
 .contact-number:hover .link-icon-phone,
 .contact-number:focus .link-icon-phone {
     fill: var(--accent-color);
+    transition: var(--transition-func);
+    outline: none;
 }
 
 
@@ -153,6 +159,8 @@ img {
 .contact-mail:hover .link-icon-mail,
 .contact-mail:focus .link-icon-mail {
     fill: var(--accent-color);
+    transition: var(--transition-func);
+    outline: none;
 }
 
 
@@ -204,6 +212,8 @@ img {
 .order-button:hover,
 .order-button:focus {
     background-color: var(--accent-color);
+    transition: var(--transition-func);
+    outline: none;
 }
 
 /* ------Section features------ */
@@ -276,6 +286,7 @@ img {
     display: flex;
     margin: 0;
     padding: 0;
+    width: 370px;
 }
 
 .list-skills li:not(:last-child) {
@@ -338,6 +349,7 @@ img {
     display: flex;
     margin: 0;
     padding: 0;
+    width: ;
 }
 
 .list-team .team-item:not(:last-child) {
@@ -345,6 +357,7 @@ img {
 }
 
 .team-item {
+    width: 270px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     background: var(--main-background-color);
     border-radius: 0px 0px 4px 4px;
@@ -398,7 +411,8 @@ img {
 .link-portfilo:hover,
 .link-portfilo:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-
+    transition: var(--transition-func);
+    outline: none;
 }
 
 /* .portfolio-item:hover,
@@ -438,6 +452,7 @@ img {
 .product-thum {
     position: relative;
     overflow: hidden;
+    width: 370px;
 }
 
 .overlay {
@@ -489,6 +504,8 @@ img {
 .nav-list .link:hover,
 .nav-list .link:focus {
     color: var(--accent-color);
+    transition: var(--transition-func);
+    outline: none;
 }
 
 .contact-mail,
@@ -503,12 +520,15 @@ img {
 .contact-number:hover,
 .contact-number:focus {
     color: var(--accent-color);
+    transition: var(--transition-func);
+    outline: none;
 }
 
 .contact-mail:hover,
 .contact-mail:focus {
 
     color: var(--accent-color);
+    outline: none;
 }
 
 
@@ -539,6 +559,8 @@ img {
     background-color: var(--accent-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
+    transition: var(--transition-func);
+    outline: none;
 }
 
 .button.web:hover,
@@ -547,6 +569,8 @@ img {
     background-color: var(--accent-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
+    transition: var(--transition-func);
+    outline: none;
 }
 
 .button.applications:hover,
@@ -555,6 +579,8 @@ img {
     background-color: var(--accent-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
+    transition: var(--transition-func);
+    outline: none;
 }
 
 .button.design:hover,
@@ -563,6 +589,9 @@ img {
     background-color: var(--accent-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
+    transition: var(--transition-func);
+    outline: none;
+
 }
 
 .button.marketing:hover,
@@ -571,6 +600,8 @@ img {
     background-color: var(--accent-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
+    transition: var(--transition-func);
+    outline: none;
 }
 
 .nav-link.current::after {
@@ -582,6 +613,7 @@ img {
     left: 0;
     bottom: -5px;
     position: absolute;
+
 
 }
 
@@ -596,6 +628,7 @@ img {
     position: absolute;
     left: 0;
     bottom: -5px;
+
 }
 
 
@@ -642,6 +675,7 @@ img {
 
     display: block;
     margin-bottom: 20px;
+    outline: none;
 }
 
 .adress-link {
@@ -651,11 +685,13 @@ img {
     font-size: 14px;
     text-decoration: none;
     font-style: normal;
+    outline: none;
 }
 
 .adress-link:hover,
 .adress-link:focus {
     color: var(--accent-color);
+    transition: var(--transition-func);
 }
 
 .number,
@@ -671,11 +707,15 @@ img {
 .mail:hover,
 .mail:focus {
     color: var(--accent-color);
+    transition: var(--transition-func);
+    outline: none;
 }
 
 .number:hover,
 .number:focus {
     color: var(--accent-color);
+    transition: var(--transition-func);
+    outline: none;
 }
 
 /* ------Decoration------ */
@@ -746,6 +786,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 
@@ -759,7 +800,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-
+    outline: none;
 }
 
 .insta-link:not(:last-child) {
@@ -770,6 +811,7 @@ img {
 .insta-link:focus {
     background-color: var(--accent-color);
     color: var(--color-list-items);
+    transition: var(--transition-func);
 }
 
 .link-icon {
@@ -781,6 +823,8 @@ img {
 .insta-link:hover .link-icon,
 .insta-link:focus .link-icon {
     fill: var(--main-background-color);
+    transition: var(--transition-func);
+    outline: none;
 }
 
 /* -------Cpmpany------- */
@@ -810,7 +854,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-
+    outline: none;
 }
 
 .logo-company:not(:last-child) {
@@ -820,6 +864,7 @@ img {
 .logo-link:hover,
 .logo-link:focus {
     border: solid 1px var(--accent-color);
+    transition: var(--transition-func);
 }
 
 .logo-icon {
@@ -829,7 +874,9 @@ img {
 
 .logo-link:hover .logo-icon,
 .logo-link:focus .logo-icon {
-    fill: var(--accent-color)
+    fill: var(--accent-color);
+    transition: var(--transition-func);
+    outline: none;
 }
 
 /* ----footer-decoration--- */
@@ -882,6 +929,8 @@ img {
 .insta-link-footer:hover,
 .insta-link-footer:focus {
     background-color: var(--accent-color);
+    transition: var(--transition-func);
+    outline: none;
 
 }
 
@@ -893,7 +942,8 @@ img {
 .link-icon-footer:hover,
 .link-icon-footer:focus {
     fill: var(--main-background-color);
-
+    transition: var(--transition-func);
+    outline: none;
 }
 
 /* -----Modal------ */
@@ -909,10 +959,7 @@ img {
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop {
-    opacity: 1;
-    pointer-events: none;
-}
+
 
 .modal {
     position: absolute;
@@ -952,9 +999,10 @@ img {
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     cursor: pointer;
-
+    transition: var(--transition-time-func);
 }
 
 .icon-close-btn {
     fill: var(--logo-text-color);
+    transition: fill var(--transition-time-func);
 }
