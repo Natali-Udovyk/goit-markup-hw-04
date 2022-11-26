@@ -57,7 +57,7 @@
       <section class="banner main-banner">
         <div class="container">
           <h1 class="title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="order-button" type="button">Замовити послугу</button>
+          <button data-modal-open class="order-button" type="button">Замовити послугу</button>
         </div>
       </section>
 
@@ -119,9 +119,18 @@
         <div class="container">
           <h4 class="headline">Чим ми займаємося</h4>
           <ul class="list-skills list">
-            <li><img src="./images/box1.jpg" alt="розробник кодить" width="370" /></li>
-            <li><img src="./images/box2.jpg" alt="дизайн на телефонах" width="370" /></li>
-            <li><img src="./images/box3.jpg" alt="пошук колору" width="370" /></li>
+            <li class="skills">
+              <p class="title-skills">ДЕСТКТОПНІ ДОДАТКИ</p>
+              <img src="./images/box1.jpg" alt="розробник кодить" width="370" />
+            </li>
+            <li class="skills">
+              <p class="title-skills">МОБІЛЬНІ ДОДАТКИ</p>
+              <img src="./images/box2.jpg" alt="дизайн на телефонах" width="370" />
+            </li>
+            <li class="skills">
+              <p class="title-skills">ДИЗАЙНЕРСЬКІ РІШЕННЯ</p>
+              <img src="./images/box3.jpg" alt="пошук колору" width="370" />
+            </li>
           </ul>
         </div>
       </section>
@@ -356,5 +365,15 @@
         </div>
       </div>
     </footer>
+    <div data-modal class="backdrop is-hidden">
+      <div class="modal">
+        <button class="btn-close" data-modal-close type="button">
+          <svg class="icon-close-btn" width="18" height="18">
+            <use href="./images/symbol-defs.svg#icon-close-x"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
